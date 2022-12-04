@@ -5,8 +5,9 @@ This is a homework for SDU's Visualization
 ## 关于Kruskal算法
 
 ​	对于一个给定的连通的无向图 G = (V, E)，希望找到一个无回路的子集 T，T 是 E 的子集，它连接了所有的顶点，且其权值之和为最小。
+$$tex (t)=\sum_{(u,v)\in T}w(u,v)$$
 
-![image](https://github.com/mrgoddessli/Visualization-Final-work/blob/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assets/image-20221204191851713.png?raw=true)
+![image](关于Kruskal算法.assets/image-20221204191851713.png)
 
 ​	因为 T 无回路且连接所有的顶点，所以它必然是一棵树，称为生成树（Spanning Tree），因为它生成了图 G。显然，由于树 T 连接了所有的顶点，所以树 T 有 V - 1 条边。一张图 G 可以有很多棵生成树，而把确定权值最小的树 T 的问题称为最小生成树问题（Minimum Spanning Tree）。术语 "最小生成树" 实际上是 "最小权值生成树" 的缩写。
 
@@ -24,7 +25,7 @@ This is a homework for SDU's Visualization
 
 例如，下面是一个无向连通图 G。
 
-![image-20221204192046119](https://github.com/mrgoddessli/Visualization-Final-work/tree/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assets/image-20221204192046119.png?raw=true)
+![image](关于Kruskal算法.assets/image-20221204192046119.png)
 
 图 G 中包含 9 个顶点和 14 条边，所以期待的最小生成树应包含 (9 - 1) = 8 条边。
 
@@ -52,39 +53,39 @@ This is a homework for SDU's Visualization
 
 1. 选择边 {7, 6}，无环路形成，包含在生成树中。
 
-![image-20221204192327130](https://github.com/mrgoddessli/Visualization-Final-work/tree/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assets/image-20221204192327130.png?raw=true)
+![image-20221204192327130](关于Kruskal算法.assets/image-20221204192327130.png)
 
 
 2. 选择边 {8, 2}，无环路形成，包含在生成树中。
 
-![image-20221204192350212](https://github.com/mrgoddessli/Visualization-Final-work/tree/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assetss/image-20221204192350212.png?raw=true)
+![image-20221204192350212](关于Kruskal算法.assets/image-20221204192350212.png)
 
 3. 选择边 {6, 5}，无环路形成，包含在生成树中。
 
-![image-20221204192407643](https://github.com/mrgoddessli/Visualization-Final-work/tree/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assets/image-20221204192407643.png?raw=true)
+![image-20221204192407643](关于Kruskal算法.assets/image-20221204192407643.png)
 
 4. 选择边 {0, 1}，无环路形成，包含在生成树中。
 
-![image-20221204192432683](https://github.com/mrgoddessli/Visualization-Final-work/tree/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assetsimage-20221204192432683.png?raw=true)
+![image-20221204192432683](关于Kruskal算法.assets/image-20221204192432683.png)
 
 5. 选择边 {2, 5}，无环路形成，包含在生成树中。
 
-![image-20221204192445404](https://github.com/mrgoddessli/Visualization-Final-work/tree/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assetsimage-20221204192445404.png?raw=true)
+![image-20221204192445404](关于Kruskal算法.assets/image-20221204192445404.png)
 
 6.  选择边 {8, 6}，有环路形成，放弃。
 7. 选择边 {2, 3}，无环路形成，包含在生成树中。
 
-![image-20221204192611451](https://github.com/mrgoddessli/Visualization-Final-work/tree/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assetsimage-20221204192611451.png?raw=true
+![image-20221204192611451](关于Kruskal算法.assets/image-20221204192611451.png)
 
 8. 选择边 {7, 8}，有环路形成，放弃。
 9. 选择边 {0, 7}，无环路形成，包含在生成树中。
 
-![image-20221204192633045](https://github.com/mrgoddessli/Visualization-Final-work/tree/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assetsimage-20221204192633045.png?raw=true)
+![image-20221204192633045](关于Kruskal算法.assets/image-20221204192633045.png)
 
 10.  选择边 {1, 2}，有环路形成，放弃。
 11. 选择边 {3, 4}，无环路形成，包含在生成树中。
 
-![image-20221204192652764](https://github.com/mrgoddessli/Visualization-Final-work/tree/main/%E5%85%B3%E4%BA%8EKruskal%E7%AE%97%E6%B3%95.assetsimage-20221204192652764.png?raw=true)
+![image-20221204192652764](关于Kruskal算法.assets/image-20221204192652764.png)
 
 12.  由于当前生成树中已经包含 V - 1 条边，算法结束
 
