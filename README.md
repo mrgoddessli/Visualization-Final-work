@@ -5,7 +5,8 @@ This is a homework for SDU's Visualization
 ## 关于Kruskal算法
 
 ​	对于一个给定的连通的无向图 G = (V, E)，希望找到一个无回路的子集 T，T 是 E 的子集，它连接了所有的顶点，且其权值之和为最小。
-$$tex (t)=\sum_{(u,v)\in T}w(u,v)$$
+
+$$ w(t)=\sum_{(u,v)\in T}w(u,v)$$
 
 ​	因为 T 无回路且连接所有的顶点，所以它必然是一棵树，称为生成树（Spanning Tree），因为它生成了图 G。显然，由于树 T 连接了所有的顶点，所以树 T 有 V - 1 条边。一张图 G 可以有很多棵生成树，而把确定权值最小的树 T 的问题称为最小生成树问题（Minimum Spanning Tree）。术语 "最小生成树" 实际上是 "最小权值生成树" 的缩写。
 
