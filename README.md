@@ -58,34 +58,34 @@ This is a homework for SDU's Visualization
 
 2. 选择边 {8, 2}，无环路形成，包含在生成树中。
 
-![image-20221204192350212](E:\homework\3-1\可视化\实验课（作业\final\关于Kruskal算法.assets\image-20221204192350212.png)
+![image-20221204192350212](关于Kruskal算法.assets\image-20221204192350212.png)
 
 3. 选择边 {6, 5}，无环路形成，包含在生成树中。
 
-![image-20221204192407643](E:\homework\3-1\可视化\实验课（作业\final\关于Kruskal算法.assets\image-20221204192407643.png)
+![image-20221204192407643](关于Kruskal算法.assets\image-20221204192407643.png)
 
 4. 选择边 {0, 1}，无环路形成，包含在生成树中。
 
-![image-20221204192432683](E:\homework\3-1\可视化\实验课（作业\final\关于Kruskal算法.assets\image-20221204192432683.png)
+![image-20221204192432683](\关于Kruskal算法.assets\image-20221204192432683.png)
 
 5. 选择边 {2, 5}，无环路形成，包含在生成树中。
 
-![image-20221204192445404](E:\homework\3-1\可视化\实验课（作业\final\关于Kruskal算法.assets\image-20221204192445404.png)
+![image-20221204192445404](\关于Kruskal算法.assets\image-20221204192445404.png)
 
 6.  选择边 {8, 6}，有环路形成，放弃。
 7. 选择边 {2, 3}，无环路形成，包含在生成树中。
 
-![image-20221204192611451](E:\homework\3-1\可视化\实验课（作业\final\关于Kruskal算法.assets\image-20221204192611451.png)
+![image-20221204192611451](\关于Kruskal算法.assets\image-20221204192611451.png)
 
 8. 选择边 {7, 8}，有环路形成，放弃。
 9. 选择边 {0, 7}，无环路形成，包含在生成树中。
 
-![image-20221204192633045](E:\homework\3-1\可视化\实验课（作业\final\关于Kruskal算法.assets\image-20221204192633045.png)
+![image-20221204192633045](\关于Kruskal算法.assets\image-20221204192633045.png)
 
 10.  选择边 {1, 2}，有环路形成，放弃。
 11. 选择边 {3, 4}，无环路形成，包含在生成树中。
 
-![image-20221204192652764](E:\homework\3-1\可视化\实验课（作业\final\关于Kruskal算法.assets\image-20221204192652764.png)
+![image-20221204192652764](\关于Kruskal算法.assets\image-20221204192652764.png)
 
 12.  由于当前生成树中已经包含 V - 1 条边，算法结束
 
