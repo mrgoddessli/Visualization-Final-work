@@ -6,7 +6,7 @@ body{
     z-index: 0;
     position: relative;
     float: left;
-    width: 73%;
+    width: 600px;
     height: 500px;
     background-color: #80FFFF;
     border: 2px solid black;
@@ -37,17 +37,17 @@ button {
     background-color: black;
     border-radius: 30px;
     border-color: black;
-    width: 235px;
+    width: 150px;
     padding: 5px;
     color: white;
 }
 
-/* button :hover {
+button :hover {
     background-color: green;
-} */
+}
 
 .btn {
-    padding: 40px;
+    padding: 30px;
 }
 
 .button {
@@ -55,7 +55,7 @@ button {
     outline: none;
     cursor: pointer;
     text-decoration: none;
-    font: 25px/100% 'Microsoft yahei', Arial, Helvetica, sans-serif;
+    font: 16px/100% 'Microsoft yahei', Arial, Helvetica, sans-serif;
     padding: .5em 2em .55em;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
     -webkit-border-radius: .5em;

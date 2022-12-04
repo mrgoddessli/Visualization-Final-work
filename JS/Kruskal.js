@@ -210,7 +210,7 @@ function createLine(start_div, end_div, x1, y1, x2, y2) {
         return;
     } else if (weight === '') {
         weight = Math.round(Math.random() * 100);
-    } else{
+    } else {
         //weight = parseInt(weight);
         if (!reg.test(weight)) {
             alert("输入错误！");
@@ -521,6 +521,9 @@ function Restart() {
     }
     MST.edge_count = 0;
     while (PriorityQueue._size > 0 || !PriorityQueue.is_empty()) {
+        if (PriorityQueue.is_empty() || (PriorityQueue._size <= 0)){
+            break;
+        }
         PriorityQueue.extract_min();
     }
 }

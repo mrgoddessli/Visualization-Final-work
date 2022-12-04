@@ -2,28 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS/index.css">
-  <script src="./JS/index.js"></script>
-  <title>Kruskal</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./JS/index.js"></script>
+    <title>Kruskal</title>
 </head>
 
 <body>
-  <div id="everything">
-    <h1>Kruskal Algorithm</h1>
-    <h3>DongtingHan / December 4, 2022</h3>
-    <div id="kruskal">
-      
+    <div id="everything">
+        <h1>Kruskal Algorithm</h1>
+        <h3>DongtingHan / December 4, 2022</h3>
+        <p><strong>eee</strong>?</p>
+        <div id="kruskal">
+            <div id="canvas" onselectstart="return false">
+                <div id="a" style="z-index: 2; position: absolute; background-color: white; border: 2px solid rgb(64, 64, 64); border-radius: 50%; color: black; transition-property: background-color; transition-duration: 1s; height: 40px; width: 40px; left: 40.7051%; top: 1.14504%; transition-delay: 0s;">
+                    <p style="position: relative; margin-left: 15px; margin-top: 10px;">1</p></div>
+                <div id="b"
+                     style="z-index: 2; position: absolute; background-color: white; border: 2px solid rgb(64, 64, 64); border-radius: 50%; color: black; transition-property: background-color; transition-duration: 1s; height: 40px; width: 40px; left: 1.28205%; top: 39.8855%; transition-delay: 0s;">
+                    <p style="position: relative; margin-left: 15px; margin-top: 10px;">2</p></div>
+                <div id="c"
+                     style="z-index: 2; position: absolute; background-color: white; border: 2px solid rgb(64, 64, 64); border-radius: 50%; color: black; transition-property: background-color; transition-duration: 1s; height: 40px; width: 40px; left: 89.7436%; top: 40.8397%; transition-delay: 0s;">
+                    <p style="position: relative; margin-left: 15px; margin-top: 10px;">3</p></div>
+                <div id="d"
+                     style="z-index: 2; position: absolute; background-color: white; border: 2px solid rgb(64, 64, 64); border-radius: 50%; color: black; transition-property: background-color; transition-duration: 1s; height: 40px; width: 40px; left: 20.0321%; top: 87.9771%; transition-delay: 0s;">
+                    <p style="position: relative; margin-left: 15px; margin-top: 10px;">4</p></div>
+                <div id="e"
+                     style="z-index: 2; position: absolute; background-color: white; border: 2px solid rgb(64, 64, 64); border-radius: 50%; color: black; transition-property: background-color; transition-duration: 1s; height: 40px; width: 40px; left: 75.3205%; top: 88.1679%; transition-delay: 0s;">
+                    <p style="position: relative; margin-left: 15px; margin-top: 10px;">5</p></div>
+                <div id="edge_1_2" class="line"
+                     style="position: absolute; transform: rotate(140.71deg); width: 314.441px; margin-left: 259.6px; margin-top: 15.24px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">13</span></div>
+                <div id="edge_2_4" class="line"
+                     style="position: absolute; transform: rotate(64.762deg); width: 278.063px; margin-left: 16.24px; margin-top: 214.36px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">67</span></div>
+                <div id="edge_4_5" class="line"
+                     style="position: absolute; transform: rotate(0.874728deg); width: 343.24px; margin-left: 134.8px; margin-top: 465.88px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">67</span></div>
+                <div id="edge_5_3" class="line"
+                     style="position: absolute; transform: rotate(-70.8464deg); width: 266.259px; margin-left: 478px; margin-top: 471.12px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">11</span></div>
+                <div id="edge_3_1" class="line"
+                     style="position: absolute; transform: rotate(-146.243deg); width: 367.766px; margin-left: 565.36px; margin-top: 219.6px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">83</span></div>
+                <div id="edge_1_4" class="line"
+                     style="position: absolute; transform: rotate(105.48deg); width: 467.602px; margin-left: 259.6px; margin-top: 15.24px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">67</span></div>
+                <div id="edge_1_5" class="line"
+                     style="position: absolute; transform: rotate(64.4022deg); width: 505.495px; margin-left: 259.6px; margin-top: 15.24px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">73</span></div>
+                <div id="edge_2_3" class="line"
+                     style="position: absolute; transform: rotate(0.546731deg); width: 549.145px; margin-left: 16.24px; margin-top: 214.36px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">32</span></div>
+                <div id="edge_3_4" class="line"
+                     style="position: absolute; transform: rotate(150.23deg); width: 496.02px; margin-left: 565.36px; margin-top: 219.6px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">81</span></div>
+                <div id="edge_2_5" class="line"
+                     style="position: absolute; transform: rotate(29.0761deg); width: 528.345px; margin-left: 16.24px; margin-top: 214.36px; text-align: center; transition-delay: 0s; background-color: black; color: black;">
+                    <span style="font-size:20px;position:absolute;margin-top:10px;font-weight:bold;">45</span></div>
+            </div>
+            <div id="buttons">
+                <div id="Kruskal2" class="btn">
+                    <button  class="button blue bigrounded">Kruskal</button>
+                    <br>
+                </div>
+                <div id="Refresh" class="btn">
+                    <button  class="button blue bigrounded">Refresh</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <p><a href="./HTML/Kruskal.html" target="_blank" >点我</a></p>
+        
     </div>
-    <!-- <div id="ifr">
-      <iframe id="ifr2" scrolling="no" src="./HTML/Kruskal.html" width="1500px" height="700px"
-                style="border: none; margin: auto;display: block">
-    </iframe>
-    </div> -->
     
-  </div>
 </body>
 
 </html>
