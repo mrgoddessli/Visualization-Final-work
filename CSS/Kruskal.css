@@ -1,15 +1,20 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
 body{
     min-width: 1500px;
 }
 #canvas {
     padding: 10px;
+    margin: auto;
     z-index: 0;
     position: relative;
-    float: left;
+    /* float: left; */
     width: 600px;
     height: 500px;
-    background-color: #80FFFF;
-    border: 2px solid black;
+    background-color: rgb(200, 225, 228);
+    border: 3px solid rgb(185, 210, 247);
     min-width: 1121px;
     min-height: 500px;
 }
@@ -26,11 +31,21 @@ body{
     transition-duration: 1s;
 }
 
+
+
 #buttons {
     text-align: center;
     position: relative;
-    float: right;
-    width: 23%;
+    /* float: right; */
+    width: 100%;
+    height: 100px;
+   
+}
+
+#btnn{
+     margin: auto;
+     width: 75%;
+     height: 100%;
 }
 
 button {
@@ -47,7 +62,24 @@ button :hover {
 }
 
 .btn {
+    position: relative;
     padding: 30px;
+    display: inline-block;
+}
+
+#a{
+    padding-left: 115px;
+    float: left;
+}
+
+#b{
+    padding-left: 200px;
+    float: left;
+}
+
+#c{
+        padding-left: 200px;
+    float: left;
 }
 
 .button {
@@ -73,10 +105,10 @@ button :hover {
 }
 
 .blue {
-    color: #d9eef7;
+    color: darkmagenta;
     border: solid 1px #0076a3;
-    background: #0095cd;
-    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
-    background: -moz-linear-gradient(top, #00adee, #0078a5);
+    background-image: linear-gradient(to right bottom,lightcyan,cyan,pink,lightpink);
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#52c4ed), to(#e1a4d8)); */
+    /* background: -moz-linear-gradient(top, #00adee, #d0a8ca); */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
 }

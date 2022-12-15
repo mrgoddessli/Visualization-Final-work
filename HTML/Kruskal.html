@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Kruskal</title>
@@ -6,25 +7,30 @@
     <script src="../JS/Kruskal.js">
     </script>
 </head>
+
 <body ondragstart="return false;" ondrop="return false;">
-    <h1><a href="https://en.wikipedia.org/wiki/Kruskal%27s_algorithm" target="_blank" class="abc" style="color:black">Kruskal's
-        Algorithms</a></h1>
+    <h1 style="text-align: center;"><a href="https://en.wikipedia.org/wiki/Kruskal%27s_algorithm" target="_blank" class="abc"
+            style="color:black;">Kruskal's
+            Algorithms</a></h1>
     <div id="canvas" onselectstart="return false">
     </div>
 
     <div id="buttons">
-        <div class="btn">
-            <button class="button blue bigrounded" onclick="Kruskal()">Kruskal</button>
-            <br>
-        </div>
-        <div class="btn">
-            <button class="button blue bigrounded" onclick="Restart()">Refresh</button>
-            <br>
-        </div>
-        <div class="btn">
-            <button class="button blue bigrounded" onclick="CleanCanvas()">Clean Up</button>
-            <br>
+        <div id="btnn">
+            <div id="a" class="btn">
+                <button class="button blue bigrounded" onclick="Kruskal()">Kruskal</button>
+                <br>
+            </div>
+            <div id="b" class="btn">
+                <button  class="button blue bigrounded" onclick="Restart()">刷新</button>
+                <br>
+            </div>
+            <div id="c" class="btn">
+                <button class="button blue bigrounded" onclick="CleanCanvas()">重置</button>
+                <br>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
